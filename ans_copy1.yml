@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+    - name: execute command
+      shell: touch samples.txt
+
+    - name: command
+      shell: uname -a
+      register: comd
+
+    - debug: var=comd.stdout_lines
