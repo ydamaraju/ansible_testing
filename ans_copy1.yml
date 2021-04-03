@@ -2,7 +2,7 @@
 - hosts: localhost
   tasks:
     - name: execute command
-      shell: touch samples.txt
+      shell: touch samps.txt
 
     - name: command
       shell: uname -a
